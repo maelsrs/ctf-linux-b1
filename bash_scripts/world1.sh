@@ -45,7 +45,7 @@ EOF
 
 cat <<EOF > /home/world1/secret/.hidden/flag.sh
 #!/bin/bash
-cat parrot.live
+curl parrot.live
 EOF
 
 
