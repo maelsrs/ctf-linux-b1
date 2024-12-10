@@ -5,7 +5,9 @@ dnf -y install \
 bash \
 vim \
 wget \
-findutils \ 
+findutils \
+epel-release \
+john \ 
 passwd && \
 dnf clean all
 
