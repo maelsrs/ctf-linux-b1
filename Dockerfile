@@ -20,6 +20,7 @@ RUN echo "world2:password2" | chpasswd
 RUN echo "world3:password3" | chpasswd
 RUN echo "world4:password4" | chpasswd
 RUN echo "world5:password5" | chpasswd
+RUN echo "root:root" | chpasswd
 
 #RUN wget -O /tmp/setup.sh web_url && \
 #    chmod +x /tmp/setup.sh && \
@@ -27,6 +28,7 @@ RUN echo "world5:password5" | chpasswd
 #    rm /tmp/setup.sh
 
 COPY bash_scripts/ /tmp/bash
+COPY utils/rockyou-1000.txt /usr/share/
 RUN chmod +x /tmp/bash/* && cd /tmp/bash/ && ./setup.sh && rm -rf /tmp/bash/
 
 USER world1
