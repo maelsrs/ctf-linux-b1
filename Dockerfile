@@ -4,7 +4,8 @@ RUN dnf -y update && \
 dnf -y install \
 bash \
 vim \
-wget \ 
+wget \
+findutils \ 
 passwd && \
 dnf clean all
 
