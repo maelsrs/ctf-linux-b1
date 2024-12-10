@@ -37,19 +37,19 @@ Remettre dans la casserole sur le feu. Faire cuire en tournant très soigneuseme
 Verser la crème sur le fond de tarte et disposer joliment les fraises coupées en 2.
 EOF
 
-cat <<EOF > /home/secret/.real_flag.txt
+cat <<EOF > /home/world1/secret/.real_flag.txt
 Code Of Ethics
 
 https://sqlite.org/codeofethics.html
 EOF
 
-cat <<EOF > /home/secret/.hidden/flag.sh
+cat <<EOF > /home/world1/secret/.hidden/flag.sh
 #!/bin/bash
 cat parrot.live
 EOF
 
 
-cat <<EOF > /home/project/2025/march/explications.txt
+cat <<EOF > /home/world1/project/2025/march/explications.txt
 Projet "Spectre Innovant" - Mars 2025
 
 Titre officiel : Déploiement d'un écosystème cybernétique multidimensionnel dans les environnements urbains résonants.
@@ -84,7 +84,7 @@ Les individus souhaitant consulter les détails du dossier doivent impérativeme
 En somme, ce projet de pointe transcende les limites de l’imagination ordinaire pour créer un futur où les vibrations humaines et technologiques s’unissent dans une symphonie cybernétique inédite.
 EOF
 
-cat <<EOF > /home/project/2025/march/.env
+cat <<EOF > /home/world1/project/2025/march/.env
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
@@ -101,6 +101,6 @@ WEB_URL=http
 WEB_PORT=8082
 EOF
 
-chmod 700 /home/secret/.hidden/flag.sh
+chmod 700 /home/world1/secret/.hidden/flag.sh
 chown -R world1:world1 /home/world1/secret
 chown -R world1:world1 /home/world1/project
