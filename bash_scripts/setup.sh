@@ -5,3 +5,4 @@
 # Worlds README
 
 bash readme.sh
+bash world1.sh
