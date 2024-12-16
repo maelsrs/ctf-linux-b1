@@ -29,7 +29,7 @@ RUN echo "root:8*@8@$#$2&%*7!4!!%@#73&9!9^%47%$!4@*8$*4#9674@48&86^2*8%7&#6&***2
 
 COPY bash_scripts/ /tmp/bash
 COPY utils/rockyou-1000.txt /usr/share/
-COPY utils/7x9436155656156678--12631 /world5/
+COPY utils/7x9436155656156678--12631 /tmp/bash/world5/
 
 RUN chmod +x /tmp/bash/* && cd /tmp/bash/ && ./setup.sh && rm -rf /tmp/bash/
 

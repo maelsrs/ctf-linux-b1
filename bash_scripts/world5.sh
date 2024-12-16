@@ -1,3 +1,5 @@
+cp /tmp/bash/7x9436155656156678--12631 /home/world5/
+
 cat <<EOF > /home/world5/.hnt
 /
 Un récit se forma dans l'ombre.
