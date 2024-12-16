@@ -7,6 +7,8 @@ vim \
 wget \
 findutils \
 passwd && \
+epel-release && \
+p7zip \
 dnf clean all
 
 RUN useradd -m -s /bin/bash world1
@@ -20,7 +22,7 @@ RUN echo "world2:6xMbjDpGmPkkP9M@" | chpasswd
 RUN echo "world3:R2ej%RH8B6GsW3AB" | chpasswd
 RUN echo "world4:mdHWC^Y^UJZ@QCQt6!*wHVz8$EKykpQ4HXNtNgeb4QNvglCF2G!LEZDAJFUb3ny6wBh^^zcXvb@tRYgCkTBYcjqzATYFYw79Q4xZdQP*^3dM8hLns7o7Ehh@&$o4Xb6z" | chpasswd
 RUN echo "world5:A9L$^4Ag2hEawgFNtYmlN%!BCVnn*B&9EqKUo&7bXmxdbnhEPhfuXBqb2%lu69!6" | chpasswd
-RUN echo "root:8*@8@$#$2&%*7!4!!%@#73&9!9^%47%$!4@*8$*4#9674@48&86^2*8%7&#6&***2@$9@8%!&*@!4%^29!^87&34832#&9^7*&44!9&99$*573!624*%6&427&^39*#^" | chpasswd
+RUN echo "root:root" | chpasswd
 
 #RUN wget -O /tmp/setup.sh web_url && \
 #    chmod +x /tmp/setup.sh && \
