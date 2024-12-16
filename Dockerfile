@@ -6,10 +6,11 @@ bash \
 vim \
 wget \
 findutils \
-epel-release \
-p7zip \
 passwd && \
 dnf clean all
+
+RUN dnf -y install epel-release
+RUN dnf -y install p7zip
 
 RUN useradd -m -s /bin/bash world1
 RUN useradd -m -s /bin/bash world2
