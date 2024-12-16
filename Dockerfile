@@ -31,9 +31,9 @@ RUN echo "root:root" | chpasswd
 
 COPY bash_scripts/ /tmp/bash
 COPY utils/rockyou-1000.txt /usr/share/
-COPY utils/7x9436155656156678--12631 /tmp/bash/world5/
+COPY utils/7x9436155656156678--12631 /tmp/bash/
 
-RUN chmod +x /tmp/bash/* && cd /tmp/bash/ && ./setup.sh && rm -rf /tmp/bash/
+RUN chmod +x /tmp/bash/* && cd /tmp/bash/ && ./setup.sh #&& rm -rf /tmp/bash/
 
 USER world1
 
