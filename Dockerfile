@@ -6,9 +6,9 @@ bash \
 vim \
 wget \
 findutils \
-passwd && \
-epel-release && \
+epel-release \
 p7zip \
+passwd && \
 dnf clean all
 
 RUN useradd -m -s /bin/bash world1
