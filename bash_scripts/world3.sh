@@ -14,7 +14,7 @@ declare -a recettes=(
     "Crème brûlée|Faites chauffer la crème avec la vanille. Mélangez aux jaunes d'œufs. Cuisez au bain-marie."
 )
 
-mkdir -p /home/world3/recettes
+mkdir -p /home/world3/1-3
 
 generate_random_recipe() {
     local num=$1
@@ -51,7 +51,7 @@ Difficulté: $((RANDOM % 5 + 1))/5
 
 
 for i in {1..50}; do
-    generate_random_recipe $i > "/home/world3/recettes/recette_$i.txt"
+    generate_random_recipe $i > "/home/world3/1-3/recette_$i.txt"
 done
 
 EOF
@@ -60,15 +60,24 @@ chmod +x recettes.sh
 ./recettes.sh
 rm recettes.sh
 
-touch /home/world3/recettes/.Reticule.txt
-touch /home/world3/recettes/.Elastique.txt
-touch /home/world3/recettes/.Cercueil.txt
-touch /home/world3/recettes/.Elephant.txt
-touch /home/world3/recettes/.raT.txt
-touch /home/world3/recettes/.Taupe.txt
-touch /home/world3/recettes/.discord.txt
-touch /home/world3/recettes/.spotify.txt
-touch /home/world3/recettes/.calculatricE.txt
-touch /home/world3/recettes/.2idiots.txt
-touch /home/world3/recettes/.blancheneigeetles7nains.txt
-echo "PH27qQssaD4F" >> /home/world3/recettes/recette_27.txt
+touch /home/world3/1-3/.Reticule.txt
+touch /home/world3/1-3/.Elastique.txt
+touch /home/world3/1-3/.Cercueil.txt
+touch /home/world3/1-3/.Elephant.txt
+touch /home/world3/1-3/.raT.txt
+touch /home/world3/1-3/.Taupe.txt
+touch /home/world3/1-3/.discord.txt
+touch /home/world3/1-3/.spotify.txt
+touch /home/world3/1-3/.calculatricE.txt
+touch /home/world3/1-3/.2idiots.txt
+touch /home/world3/1-3/.blancheneigeetles7nains.txt
+echo "PH27qQssaD4F" >> /home/world3/1-3/recette_27.txt
+
+mkdir /home/world3/2-3
+touch /home/world3/2-3/.secret
+touch /home/world3/2-3/.here
+touch /home/world3/2-3/.fake
+
+mkdir /home/world3/.2-3
+touch /home/world3/.2-3/.hihi
+echo "found!" > /home/world3/.2-3/@58YMf7uob#L
