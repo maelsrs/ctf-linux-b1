@@ -14,6 +14,7 @@ for user in "${!user_links[@]}"; do
 
     readme_path="$user_home/README.md"
     # wget -O "$readme_path" "${user_links[$user]}"
+    touch $readme_path
 
     bashrc_path="$user_home/.bashrc"
     echo "cat $readme_path" >> "$bashrc_path"
