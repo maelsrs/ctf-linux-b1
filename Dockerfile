@@ -9,6 +9,7 @@ findutils \
 passwd && \
 dnf clean all
 
+#e2fsprogs
 RUN dnf -y install epel-release
 RUN dnf -y install p7zip
 
