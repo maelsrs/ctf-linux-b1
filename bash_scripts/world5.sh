@@ -25,7 +25,7 @@ EOF
 
 mkdir /home/world5p2/___
 
-cat <<EOF > aaa.sh
+cat <<'EOF' > aaa.sh
 #!/bin/bash
 
 if [ $# -ne 1 ]; then
