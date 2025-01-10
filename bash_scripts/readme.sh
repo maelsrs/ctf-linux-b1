@@ -6,6 +6,7 @@ declare -A user_links=(
     ["world3"]="",
     ["world4"]="",
     ["world5"]="",
+    ["world5p2"]="",
 )
 
 for user in "${!user_links[@]}"; do
