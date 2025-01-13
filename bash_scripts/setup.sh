@@ -16,5 +16,7 @@ echo "root:!iAu!y6ST&*oS2L*" | chpasswd
 
 bash readme.sh
 bash world1.sh
+bash world2.sh
 bash world3.sh
+bash world4.sh
 bash world5.sh
