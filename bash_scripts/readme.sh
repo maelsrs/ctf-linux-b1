@@ -1,20 +1,31 @@
 #!/bin/bash
 
-declare -A user_links=(
-    ["world1"]="",
-    ["world2"]="",
-    ["world3"]="",
-    ["world4"]="",
-    ["world5"]="",
-    ["world5p2"]="",
+users=(
+    "root"
+    "world1"
+    "world2"
+    "world3"
+    "world4"
+    "world5"
+    "world5p2"
 )
 
-for user in "${!user_links[@]}"; do
-    user_home="/home/$user"
+for user in "${users[@]}"; do
+    if [ "$user" = "root" ]; then
+        user_home="/$user"
+    else
+        user_home="/home/$user"
+    fi
+
+    source_readme="/tmp/bash/readme/${user}.md"
+    
+    if [ ! -f "$source_readme" ]; then
+        echo "Attention: $source_readme n'existe pas"
+        continue
+    fi
 
     readme_path="$user_home/README.md"
-    # wget -O "$readme_path" "${user_links[$user]}"
-    touch $readme_path
+    cp "$source_readme" "$readme_path"
 
     bashrc_path="$user_home/.bashrc"
     echo "cat $readme_path" >> "$bashrc_path"

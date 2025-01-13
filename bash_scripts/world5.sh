@@ -1,4 +1,5 @@
-cp /tmp/bash/7x9436155656156678--12631 /home/world5/
+mv /tmp/bash/7x9436155656156678--12631 /home/world5/
+mv /tmp/bash/rockyou-1000.txt /usr/share
 
 cat <<EOF > /home/world5/.hnt
 /

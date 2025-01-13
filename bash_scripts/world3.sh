@@ -71,7 +71,7 @@ touch /home/world3/1-3/.spotify.txt
 touch /home/world3/1-3/.calculatricE.txt
 touch /home/world3/1-3/.2idiots.txt
 touch /home/world3/1-3/.blancheneigeetles7nains.txt
-echo "PH27qQssaD4F" >> /home/world3/1-3/recette_27.txt
+echo "2pF7SMt5SZPH" >> /home/world3/1-3/recette_27.txt
 
 mkdir /home/world3/2-3
 touch /home/world3/2-3/.secret
@@ -80,4 +80,26 @@ touch /home/world3/2-3/.fake
 
 mkdir /home/world3/.2-3
 touch /home/world3/.2-3/.hihi
-echo "found!" > /home/world3/.2-3/@58YMf7uob#L
+echo "found!" > /home/world3/.2-3/wUHiPDaVQuz7
+
+#!/bin/bash
+
+mkdir -p /home/world3/3-3/
+chmod 755 /home/world3/3-3/
+mv /tmp/bash/curler.c /home/world3/3-3/
+chown root:root /home/world3/3-3/curler.c
+chmod 755 /home/world3/3-3/curler.c
+gcc -o /home/world3/3-3/curler /home/world3/3-3/curler.c
+chown gccuser:gccuser /home/world3/3-3/curler
+chmod 4755 /home/world3/3-3/curler    # Noter le 4 pour SUID
+echo "Vous avez accès au code dans le fichier curler.c, et vous devez lancer ./curler x, pour trouver la dernière partie du mot de passe, bonne chance !" > /home/world3/3-3/README.md
+chown root:root /home/world3/3-3/README.md
+chmod 644 /home/world3/3-3/README.md
+echo "gBR2pfgkz3CL" > /home/world3/3-3/.passwd
+chown gccuser:gccuser /home/world3/3-3/.passwd
+chmod 600 /home/world3/3-3/.passwd
+groupadd developers
+usermod -aG developers gccuser
+chown root:developers /usr/bin/gcc
+chmod 750 /usr/bin/gcc
+setcap cap_setuid+ep /home/world3/3-3/curler
