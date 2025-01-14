@@ -39,5 +39,5 @@
 
 
 Vous avez terminé !
-Voici le flag de fin: GG{ONUW24DMMVXG63R7}
+Le flag de fin est dans flag.txt
 
