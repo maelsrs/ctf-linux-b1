@@ -19,7 +19,7 @@ Des mesures ont été **réalisées** pour éviter que des joueurs *trichent* en
 L'installation nécéssite docker, que vous pouvez installer facilement sur votre distribution linux en suivant la [Documentation Docker](https://docs.docker.com/)
 ```
 git clone https://github.com/maelsrs/ctf-linux-b1
-cd ctf-linux-b1 && chmod +x start.sh && start.sh
+cd ctf-linux-b1 && chmod +x start.sh && ./start.sh
 ```
 
 # Mondes
